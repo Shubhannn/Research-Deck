@@ -1,0 +1,177 @@
+Create a modern, visually appealing, and interactive presentation deck web application 
+using React for the topic "Research Process" in Research Methodology. 
+
+REQUIREMENTS:
+
+1. TECHNOLOGY STACK:
+   - React 18+ with functional components and hooks
+   - React Router for navigation between slides
+   - Styled Components or Tailwind CSS for styling
+   - Framer Motion for smooth animations and transitions
+   - React Icons for visual elements
+   - Responsive design (mobile, tablet, desktop)
+
+2. PRESENTATION STRUCTURE (10-12 slides):
+   Slide 1: Title Slide
+   - Main title: "Research Process"
+   - Subtitle: "A Systematic Approach to Research Methodology"
+   - Author name and date
+   - Animated entrance
+
+   Slide 2: What is Research Process?
+   - Definition with animated text reveal
+   - Key characteristics (bullet points with staggered animation)
+   - Relevant icon/illustration
+
+   Slide 3: Importance of Research Process
+   - 4-5 key points with icons
+   - Hover effects on each point
+   - Visual emphasis
+
+   Slide 4: Overview - Steps in Research Process
+   - Circular or linear flowchart showing all 10 steps
+   - Interactive diagram where each step can be clicked
+   - Visual representation of the cyclical nature
+
+   Slide 5: Step 1 - Identifying the Research Problem
+   - Title and description
+   - Key considerations (animated list)
+   - Visual example or illustration
+
+   Slide 6: Step 2 - Literature Review
+   - Purpose and process
+   - Visual representation of knowledge building
+   - Animated flow diagram
+
+   Slide 7: Steps 3-4 - Hypothesis & Research Design
+   - Split-screen layout
+   - Formulating hypotheses on left
+   - Research methodology design on right
+   - Interactive toggle between content
+
+   Slide 8: Steps 5-6 - Sampling & Data Collection
+   - Visual representation of sampling methods
+   - Data collection techniques with icons
+   - Interactive cards with flip animation
+
+   Slide 9: Steps 7-8 - Analysis & Hypothesis Testing
+   - Data flow visualization
+   - Analysis tools showcase
+   - Animated charts/graphs
+
+   Slide 10: Steps 9-10 - Interpretation & Reporting
+   - Research output visualization
+   - Report structure breakdown
+   - Publication pathway
+
+   Slide 11: Types of Research Methodology
+   - Three columns: Qualitative, Quantitative, Mixed Methods
+   - Comparison cards with hover effects
+   - Visual differentiation
+
+   Slide 12: Key Considerations & Best Practices
+   - Grid layout with cards
+   - Icons for validity, reliability, ethics, bias
+   - Interactive tooltips
+
+   Slide 13: Challenges in Research Process
+   - Animated list with problem-solution pairs
+   - Visual metaphors
+
+   Slide 14: Conclusion & Thank You
+   - Key takeaways (3-4 points)
+   - Contact information
+   - Q&A prompt
+
+3. FEATURES & INTERACTIVITY:
+   - Navigation: Arrow keys, on-screen buttons, progress bar, slide numbers
+   - Smooth transitions between slides (fade, slide, zoom effects)
+   - Animated content reveals (text, bullets, diagrams)
+   - Interactive elements: hoverable cards, clickable diagrams, expandable sections
+   - Progress indicator showing current slide position
+   - Table of contents/slide overview (accessible via menu)
+   - Fullscreen mode toggle
+   - Print/Export to PDF functionality
+   - Dark/Light theme toggle
+   - Keyboard shortcuts (space, arrows, home, end)
+
+4. DESIGN SPECIFICATIONS:
+   - Color Scheme: 
+     * Primary: Modern teal/blue (#0ea5e9, #06b6d4)
+     * Secondary: Slate/gray for text (#1e293b, #475569)
+     * Accent: Orange/amber for highlights (#f59e0b)
+     * Background: Clean white or subtle gradient
+   - Typography:
+     * Headings: Bold, modern sans-serif (Inter, Poppins, or system fonts)
+     * Body: Readable sans-serif
+     * Code/technical: Monospace font
+   - Layout: 16:9 aspect ratio, centered content, generous whitespace
+   - Animations: Smooth, professional (300-500ms duration)
+   - Icons: Use react-icons library (FiCheckCircle, FiBookOpen, FiDatabase, etc.)
+
+5. CODE STRUCTURE:
+   - Component-based architecture
+   - Separate components: Slide, Navigation, ProgressBar, ThemeToggle
+   - Custom hooks: useKeyboardNavigation, useSlideAnimation
+   - Context API for theme and navigation state
+   - Clean, well-commented code
+   - Modular and reusable components
+
+6. SPECIFIC VISUAL ELEMENTS:
+   - Animated flowchart for research process steps
+   - Icon representations for each methodology type
+   - Progress circle/bar at bottom or top
+   - Slide transition effects (fade, slide-in)
+   - Hover animations on interactive elements
+   - Gradient backgrounds for title slides
+   - Card components with shadows for content sections
+
+7. RESPONSIVE BEHAVIOR:
+   - Desktop: Full presentation view
+   - Tablet: Adapted layout with touch navigation
+   - Mobile: Vertical scrolling or simplified slide view
+
+8. PACKAGE.JSON DEPENDENCIES:
+   Include: react, react-dom, react-router-dom, framer-motion, styled-components 
+   or tailwindcss, react-icons
+
+9. ADDITIONAL FEATURES:
+   - Slide notes view (presenter mode)
+   - Timer/clock display
+   - Auto-advance slides option
+   - Slide thumbnails sidebar
+   - Search/jump to slide functionality
+
+10. FILE STRUCTURE:
+    src/
+    ├── components/
+    │   ├── Slide.jsx
+    │   ├── Navigation.jsx
+    │   ├── ProgressBar.jsx
+    │   ├── ThemeToggle.jsx
+    │   └── SlideContent/
+    │       ├── TitleSlide.jsx
+    │       ├── WhatIsResearch.jsx
+    │       ├── ResearchSteps.jsx
+    │       └── [other slide components]
+    ├── hooks/
+    │   ├── useKeyboardNavigation.js
+    │   └── useSlideAnimation.js
+    ├── context/
+    │   └── PresentationContext.js
+    ├── data/
+    │   └── slidesData.js
+    ├── styles/
+    │   └── theme.js
+    ├── App.jsx
+    └── index.js
+
+Please generate complete, production-ready code with:
+- All component files fully implemented
+- Proper state management
+- Smooth animations
+- Responsive CSS
+- Comments explaining key sections
+- README with setup instructions
+
+Make it visually stunning, professional, and suitable for an academic presentation.

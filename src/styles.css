@@ -1,0 +1,34 @@
+/* Global simple reset to keep things tidy for styled-components */
+html,body,#root{
+  height:100%;
+  margin:0;
+}
+body{
+  font-family: Inter, Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0f172a;
+  background: linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Theme transition for smooth background/text color changes */
+body, #app-shell {
+  transition: background 350ms ease, color 350ms ease;
+}
+
+/* Responsive helpers for the app */
+@media (max-width: 900px){
+  body{font-size:15px}
+}
+
+@media (max-width: 520px){
+  body{font-size:14px}
+}
+
+/* Simple print styles for PDF export */
+@media print{
+  body{background:white;color:black}
+  aside, button, input{display:none !important}
+}
+
+/* Utility */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
